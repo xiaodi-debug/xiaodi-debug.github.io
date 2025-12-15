@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>大神之路</title>
+        <link>https://liuxiaodi.icu</link>
+        <description>记录大神之路上的学习、踩坑与成长</description>
+        <lastBuildDate>Mon, 15 Dec 2025 12:06:06 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>刘晓迪</generator>
+        <language>zh</language>
+        <copyright>Copyright © 2020-present 刘晓迪</copyright>
+        <item>
+            <title><![CDATA[在飞牛 NAS 上用 Docker 折腾 CloudSave、quark-auto-save、v2raya]]></title>
+            <link>https://liuxiaodi.icu/posts/2025/nas-docker-feiniu-deploy</link>
+            <guid>https://liuxiaodi.icu/posts/2025/nas-docker-feiniu-deploy</guid>
+            <pubDate>Wed, 10 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[记录我在飞牛 NAS 上用 Docker 部署 CloudSave、quark-auto-save、v2raya、飞牛影视和飞牛图库的过程，以及中间踩过的一些小坑。]]></description>
+            <author>114514@gmail.com (刘晓迪)</author>
+        </item>
+        <item>
+            <title><![CDATA[MySQL 学习笔记：从表设计到常见查询（附踩坑记录）]]></title>
+            <link>https://liuxiaodi.icu/posts/2025/mysql-notes-basics</link>
+            <guid>https://liuxiaodi.icu/posts/2025/mysql-notes-basics</guid>
+            <pubDate>Thu, 20 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[记录我在用 MySQL 做博客/业务系统时的一些基础表设计思路、常见查询写法，以及编码、索引、N+1 查询等踩过的坑。]]></description>
+            <author>114514@gmail.com (刘晓迪)</author>
+        </item>
+        <item>
+            <title><![CDATA[NestJS 学习笔记：从0到1实现鉴权的接口]]></title>
+            <link>https://liuxiaodi.icu/posts/2025/nestjs-first-api</link>
+            <guid>https://liuxiaodi.icu/posts/2025/nestjs-first-api</guid>
+            <pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[记录我用 NestJS 从 0 搭出一个简单 REST API 服务的过程，包括项目初始化、模块划分、JWT 登录鉴权，以及中间遇到的一些坑。]]></description>
+            <author>114514@gmail.com (刘晓迪)</author>
+        </item>
+        <item>
+            <title><![CDATA[Vue3 学习笔记：一个带搜索和分页的文章列表]]></title>
+            <link>https://liuxiaodi.icu/posts/2025/1010</link>
+            <guid>https://liuxiaodi.icu/posts/2025/1010</guid>
+            <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[用 Vue3 组合式 API 实战一个带搜索、分页、状态缓存的文章列表页面，并记录中间踩过的坑。]]></description>
+            <author>114514@gmail.com (刘晓迪)</author>
+        </item>
+    </channel>
+</rss>
