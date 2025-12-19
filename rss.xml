@@ -4,11 +4,51 @@
         <title>大神之路</title>
         <link>https://liuxiaodi.icu</link>
         <description>记录大神之路上的学习、踩坑与成长</description>
-        <lastBuildDate>Mon, 15 Dec 2025 12:06:06 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Dec 2025 16:08:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>刘晓迪</generator>
         <language>zh</language>
         <copyright>Copyright © 2020-present 刘晓迪</copyright>
+        <item>
+            <title><![CDATA[Docker 安装 + 常用命令 + Docker Compose 使用教程（从0到能用）]]></title>
+            <link>https://liuxiaodi.icu/posts/2025/docker-compose-tutorial</link>
+            <guid>https://liuxiaodi.icu/posts/2025/docker-compose-tutorial</guid>
+            <pubDate>Fri, 19 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[一篇面向新手的 Docker 实战教程：从安装 Docker（Windows/Linux）开始，整理最常用的 Docker 命令，并用 Docker Compose 演示如何一键启动多服务（MySQL/Redis/Nginx/应用）。]]></description>
+            <author>114514@gmail.com (刘晓迪)</author>
+        </item>
+        <item>
+            <title><![CDATA[一套可直接跑的 Docker Compose：NestJS + MySQL + Redis + Nginx（含 .env/初始化 SQL/反代）]]></title>
+            <link>https://liuxiaodi.icu/posts/2025/nestjs-docker-compose-stack</link>
+            <guid>https://liuxiaodi.icu/posts/2025/nestjs-docker-compose-stack</guid>
+            <pubDate>Fri, 19 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[给出一套可直接复制运行的 Docker Compose 栈：Nginx 作为入口反代到 NestJS，MySQL 持久化并支持初始化 SQL，Redis 提供缓存能力，包含目录结构、.env、nginx 配置、init.sql 与 Dockerfile。]]></description>
+            <author>114514@gmail.com (刘晓迪)</author>
+        </item>
+        <item>
+            <title><![CDATA[NestJS 使用 Redis 缓存：从接入到失效策略与最佳实践]]></title>
+            <link>https://liuxiaodi.icu/posts/2025/nestjs-redis-cache</link>
+            <guid>https://liuxiaodi.icu/posts/2025/nestjs-redis-cache</guid>
+            <pubDate>Fri, 19 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[以 NestJS 为例介绍如何接入 Redis 做缓存，包括 CacheModule 接入、接口级缓存、手动缓存、缓存失效、Key 设计以及常见坑与最佳实践。]]></description>
+            <author>114514@gmail.com (刘晓迪)</author>
+        </item>
+        <item>
+            <title><![CDATA[NestJS + TypeORM 多库多租户（DB per tenant）代码落地：DataSource 管理、并发单飞与回收]]></title>
+            <link>https://liuxiaodi.icu/posts/2025/nestjs-typeorm-db-per-tenant-practical</link>
+            <guid>https://liuxiaodi.icu/posts/2025/nestjs-typeorm-db-per-tenant-practical</guid>
+            <pubDate>Fri, 19 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[多库多租户（每个租户一个数据库）在 NestJS + TypeORM v0.3+ 下的可落地实现：tenant 解析、TenantDataSourceManager（并发单飞锁）、REQUEST scope provider 注入、Repository/EntityManager 使用方式、连接池容量规划与回收策略。]]></description>
+            <author>114514@gmail.com (刘晓迪)</author>
+        </item>
+        <item>
+            <title><![CDATA[NestJS + TypeORM：连接池配置与多租户实践（可落地方案）]]></title>
+            <link>https://liuxiaodi.icu/posts/2025/nestjs-typeorm-multitenancy-pool</link>
+            <guid>https://liuxiaodi.icu/posts/2025/nestjs-typeorm-multitenancy-pool</guid>
+            <pubDate>Fri, 19 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[介绍在 NestJS 中使用 TypeORM 时如何正确配置连接池，并给出多租户（单库多租户 / 多库多租户）两种常见实现方案：租户解析、DataSource 管理、Provider 注入、迁移策略与常见坑。]]></description>
+            <author>114514@gmail.com (刘晓迪)</author>
+        </item>
         <item>
             <title><![CDATA[在飞牛 NAS 上用 Docker 折腾 CloudSave、quark-auto-save、v2raya]]></title>
             <link>https://liuxiaodi.icu/posts/2025/nas-docker-feiniu-deploy</link>
