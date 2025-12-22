@@ -51,7 +51,7 @@ export const mainStore = defineStore("main", {
       lastScrollY: 0,
       // 站点背景
       backgroundType: "patterns",
-      backgroundUrl: "https://gitee.com/its-liu-xiaodi_admin/my_img/raw/image/bg_wrapper01.webp",
+      backgroundUrl: "https://gitee.com/its-liu-xiaodi_admin/my_img/raw/master/infinity-975771.jpg",
     };
   },
   getters: {},
