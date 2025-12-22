@@ -8,7 +8,7 @@
       video="https://gitee.com/its-liu-xiaodi_admin/my_img/raw/image/banner.mp4"
     >
       <template #footer-slot>
-        <a class="to-github" href="https://github.com/toctong" target="_blank">
+        <a class="to-github" href="https://github.com/xiaodi-debug" target="_blank">
           <i class="iconfont icon-github"></i>
           <span>前往 Github</span>
         </a>

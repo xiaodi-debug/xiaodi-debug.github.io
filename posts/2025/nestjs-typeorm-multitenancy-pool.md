@@ -2,6 +2,7 @@
 title: NestJS + TypeORM：连接池配置与多租户实践（可落地方案）
 tags: [Node.js, NestJS, TypeORM, MySQL, PostgreSQL, 连接池, 多租户, 架构]
 categories: [后端]
+comment: true
 date: 2025-12-19
 description: 介绍在 NestJS 中使用 TypeORM 时如何正确配置连接池，并给出多租户（单库多租户 / 多库多租户）两种常见实现方案：租户解析、DataSource 管理、Provider 注入、迁移策略与常见坑。
 articleGPT: 这篇文章从 TypeORM 的连接池参数与并发模型讲起，先说明“多连接 vs 连接池”的区别，然后重点讲多租户的两条主线：共享数据库（tenant_id 隔离）与按租户独立数据库（DataSource per tenant）。文章给出 NestJS 中解析租户（中间件/守卫/请求上下文）、按租户复用 DataSource、连接池与回收、迁移与索引、以及穿透与安全边界等最佳实践。

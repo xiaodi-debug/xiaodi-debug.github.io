@@ -15,12 +15,14 @@
       <span class="tool" @click="router.go('/pages/privacy')"> 隐私政策 </span>
     </div>
     <!-- 区分评论系统 -->
-    <Artalk v-if="theme.comment.type === 'artalk'" :fill="fill" />
+    <Giscus v-if="theme.comment.type === 'giscus'" :fill="fill" />
+    <Artalk v-else-if="theme.comment.type === 'artalk'" :fill="fill" />
     <Twikoo v-else-if="theme.comment.type === 'twikoo'" :fill="fill" />
   </div>
 </template>
 
 <script setup>
+import Giscus from './Giscus.vue';
 const { theme } = useData();
 const router = useRouter();
 const props = defineProps({

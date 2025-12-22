@@ -30,12 +30,12 @@ import Link from "@/views/Link.vue";
 
 - 名称：`大神之路`
 - 描述：`记录我在编程世界里一路打怪升级的过程`
-- 地址：`https://github.com/toctong`（暂时先放 GitHub，你也可以改成你自己的主页）
+- 地址：`https://github.com/xiaodi-debug`（暂时先放 GitHub，你也可以改成你自己的主页）
 
 ```yml
 name: 大神之路
 desc: 记录我在编程世界里一路打怪升级的过程
-url: https://github.com/toctong
+url: https://github.com/xiaodi-debug
 ```
 
 ### 怎么申请？

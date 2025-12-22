@@ -61,7 +61,7 @@ export const getAllPosts = async () => {
           const { birthtimeMs, mtimeMs } = stat;
           // 解析 front matter
           const { data } = matter(content);
-          const { title, date, categories, description, tags, top, cover } = data;
+          const { title, date, updated, categories, description, tags, top, cover } = data;
           // 计算文章的过期天数（按天精度，避免时区和时间部分导致误差）
           let expired = 0;
           if (date) {
@@ -70,12 +70,15 @@ export const getAllPosts = async () => {
             const diff = nowDay.diff(postDay, "day");
             expired = diff < 0 ? 0 : diff;
           }
+          // 处理更新日期：优先使用 frontmatter.updated，否则回退到文件最后修改时间
+          const updatedMs = updated ? new Date(updated).getTime() : mtimeMs;
           // 返回文章对象
           return {
             id: generateId(item),
             title: title || "未命名文章",
             date: date ? new Date(date).getTime() : birthtimeMs,
             lastModified: mtimeMs,
+            updated: updatedMs,
             expired,
             tags,
             categories,

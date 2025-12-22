@@ -36,7 +36,7 @@
         </span>
         <span class="update meta">
           <i class="iconfont icon-time" />
-          {{ formatTimestamp(page?.lastUpdated || postMetaData.lastModified) }}
+          {{ formatTimestamp(postMetaData.updated || page?.lastUpdated || postMetaData.lastModified) }}
         </span>
         <!-- 热度 -->
         <span class="hot meta">
@@ -53,10 +53,8 @@
     <div class="post-content">
       <article class="post-article s-card">
         <!-- 过期提醒 -->
-        <div class="expired s-card">
-          本文发表于
-          <strong>{{ dayjs(postMetaData.date).format("YYYY-MM-DD") }}</strong>
-          发布
+        <div class="expired s-card" v-if="expiredDays >= 180">
+          本文发表于 <strong>{{ expiredDays }}</strong> 天前，其中的信息可能已经事过境迁
         </div>
         <!-- AI 摘要 -->
         <ArticleGPT />
@@ -124,7 +122,7 @@ const expiredDays = computed(() => {
   const nowDay = dayjs().startOf("day");
   const postDay = dayjs(postMetaData.value.date).startOf("day");
   const diff = nowDay.diff(postDay, "day");
-  return dayjs(diff).format("DD/MM/YYYY");
+  return diff < 0 ? 0 : diff;
 });
 
 onMounted(() => {

@@ -4,6 +4,7 @@ import { routeChange } from "@/utils/initTools.mjs";
 import { enhanceAppWithTabs } from "vitepress-plugin-tabs/client";
 import LazyLoader from "@/components/LazyLoader.vue";
 import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
+// import { useData, useRoute } from "vitepress";
 
 // 根组件
 import App from "@/App.vue";
@@ -23,6 +24,7 @@ const Theme = {
   Layout: () => {
     return h(App);
   },
+  // 取消插件模式评论，改为在 Comments 组件内直接渲染 giscus
   enhanceApp({ app, router, siteData }) {
     // 挂载
     app.use(pinia);

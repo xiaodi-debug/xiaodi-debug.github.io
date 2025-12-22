@@ -17,7 +17,7 @@ export const themeConfig = {
       name: "刘晓迪",
       cover: "/images/logo/logo.svg",
       email: "114514@gmail.com",
-      link: "https://github.com/toctong",
+      link: "https://github.com/xiaodi-debug",
     },
   },
   // 备案信息
@@ -171,7 +171,7 @@ export const themeConfig = {
         {
           icon: "/images/logo/logo.webp",
           name: "GitHub",
-          url: "https://github.com/toctong",
+          url: "https://github.com/xiaodi-debug",
         },
       ],
     },
@@ -199,23 +199,23 @@ export const themeConfig = {
       },
       {
         icon: "github",
-        link: "https://github.com/toctong",
+        link: "https://github.com/xiaodi-debug",
       },
       {
         icon: "telegram",
-        link: "https://t.me/bottom_user",
+        link: "https://t.me/liuxiaodi",
       },
       {
         icon: "bilibili",
-        link: "https://space.bilibili.com/98544142",
+        link: "https://space.bilibili.com/liuxiaodi",
       },
       {
         icon: "qq",
-        link: "https://res.abeim.cn/api/qq/?qq=1539250352",
+        link: "https://res.abeim.cn/api/qq/?qq=195815052",
       },
       {
         icon: "twitter-x",
-        link: "https://twitter.com/iimmsyy",
+        link: "https://twitter.com/liuxiaodi",
       },
     ],
     // sitemap
@@ -250,10 +250,35 @@ export const themeConfig = {
   },
   // 评论
   comment: {
-    enable: false,
+    enable: true,
     // 评论系统选择
-    // artalk / twikoo
-    type: "artalk",
+    // artalk / twikoo / giscus
+    type: "giscus",
+    // giscus (GitHub Discussions)
+    // https://giscus.app/
+    giscus: {
+      // 必填：<owner>/<repo>
+      repo: "xiaodi-debug/xiaodi-debug.github.io",
+      // 必填：在 giscus.app 生成的 repoId（请到 giscus.app 获取真实 ID）
+      repoId: "R_kgDOQpERpA",
+      // 建议：分类与分类ID，建议创建 "Announcements" 或 "General"
+      category: "General",
+      categoryId: "DIC_kwDOQpERpM4C0IDj",
+      // 关联方式：pathname / url / title 等
+      mapping: "pathname",
+      // 严格匹配：0/1
+      strict: 0,
+      // 表情反应：0/1
+      reactionsEnabled: 1,
+      // 是否回传元数据：0/1
+      emitMetadata: 0,
+      // 输入框位置：top/bottom
+      inputPosition: "bottom",
+      // 主题：preferred_color_scheme / light / dark / transparent_dark 等
+      theme: "preferred_color_scheme",
+      // 语言
+      lang: "zh-CN",
+    },
     // artalk
     // https://artalk.js.org/
     artalk: {
@@ -316,7 +341,7 @@ export const themeConfig = {
   music: {
     enable: false,
     // url
-    url: "https://api-meting.example.com",
+    url: "https://github.com/imsyy/Meting-API",
     // id
     id: 9379831714,
     // netease / tencent / kugou
